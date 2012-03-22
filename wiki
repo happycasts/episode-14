@@ -19,3 +19,7 @@ I can use
     debuild -us -uc
 
 to ignore the key.
+
+but if you check `man debuild`, it want us to use
+
+    debuild -i -us -uc -b
