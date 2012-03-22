@@ -5,6 +5,8 @@ I think this method serves my goal better, cause "build from source code" use "d
 
 All I need to show the "control" "postinstall" "prerm" in "DEBIAN" and the real files going to be installed.
 
+then I will briefly show how to buile from source, maybe.
+
 
 
 
