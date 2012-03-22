@@ -1,0 +1,21 @@
+follow 
+https://wiki.ubuntu.com/PackagingGuide/Basic?action=show
+
+everthing works but the final step
+
+    debuild -S
+
+the error:
+
+    secret key not available
+
+it seems that debuild will get the email-address in changlog, and use this to find the key, anyway, something really stupid.
+
+Luckily follow
+http://linux.derkeiler.com/Mailing-Lists/Debian/2004-12/4422.html
+
+I can use
+
+    debuild -us -uc
+
+to ignore the key.
