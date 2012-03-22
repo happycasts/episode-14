@@ -1,3 +1,14 @@
+# Build with ready-made binaries
+http://users.telenet.be/mydotcom/howto/linux/package.htm
+
+I think this method serves my goal better, cause "build from source code" use "debuild" are too much automated. 
+
+All I need to show the "control" "postinstall" "prerm" in "DEBIAN" and the real files going to be installed.
+
+
+
+
+# build from source code
 follow 
 https://wiki.ubuntu.com/PackagingGuide/Basic?action=show
 
