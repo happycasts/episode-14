@@ -1,3 +1,44 @@
+#DEBIAN/control
+
+`dpkg -l` can list the short description, double click the package to open it in "ubuntu software center", you can get a lot.
+
+goto
+
+    http://screenshots.ubuntu.com/upload
+
+if you want to add a screenshot for your pkg, but it seems that you pkg most in ubuntu/debian repo already.
+
+change name:
+
+    peter:~/xxx$ dpkg-name debian.deb 
+    dpkg-name: info: moved 'debian.deb' to './happyhello_1.0_all.deb'
+
+
+now this error  installing with SoftwareCenter
+
+    E: happyhello: wrong-file-owner-uid-or-gid usr/ 1000/1000
+
+
+this is solved by fakeroot
+
+    peter:~/xxx$ fakeroot
+    root:~/xxx# dpkg-deb --build debian
+    dpkg-deb: building package `happyhello' in `debian.deb'.
+
+
+now the error
+
+   doesn't provide a valid Installed-Size control field. See Debian Policy 5.6.20.
+
+now I google "Debian Policy 5.6.20", and get sth really useful:
+
+http://www.debian.org/doc/debian-policy/ch-controlfields.html
+
+and this is the best tutorial ever:
+http://www.bytehold.com/index.php/projects/176-debian-binary-package-and-repository-howto
+
+
+
 # Build with ready-made binaries
 http://users.telenet.be/mydotcom/howto/linux/package.htm
 
