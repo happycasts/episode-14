@@ -25,6 +25,7 @@ this is solved by fakeroot
     root:~/xxx# dpkg-deb --build debian
     dpkg-deb: building package `happyhello' in `debian.deb'.
 
+Edit: fakeroot will be auto-setup  if I install dpkg-dev( for dpkg-name), so now the "1000, 1000" problem no longer reproduciable.
 
 now the error
 
@@ -43,13 +44,6 @@ http://www.bytehold.com/index.php/projects/176-debian-binary-package-and-reposit
 http://users.telenet.be/mydotcom/howto/linux/package.htm
 
 I think this method serves my goal better, cause "build from source code" use "debuild" are too much automated. 
-
-All I need to show the "control" "postinstall" "prerm" in "DEBIAN" and the real files going to be installed.
-
-then I will briefly show how to buile from source, maybe.
-
-
-
 
 # build from source code
 follow 
